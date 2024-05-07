@@ -39,7 +39,7 @@ function click_msg() {
 document.querySelector("html").addEventListener("click", click_msg);
 
 /*
-i could've done this one below wich uses a anonym function, but i think
+i could've done this one below wich uses an anonym function, but i think
 this is a bit ugly and harder to read.
 
 document.querySelector("html").addEventListener("click", function () {
