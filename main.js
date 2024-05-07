@@ -7,4 +7,6 @@ let somevar1;
 // js is also case-sensitive, we can sign a value to a variable in its declaration:
 let SomeVar1 = "i'm a string!";
 
-document.getElementById("4_equals_4").textContent = "4" === 4;
+// the === test if both variables are of the same type and has the same value
+document.getElementById("4_equals_4").textContent = "4" == 4;
+
