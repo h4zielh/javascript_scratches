@@ -59,7 +59,7 @@ function img_click() {
     }
 
     myImage.setAttribute("src", "images/image_" + img_n.toString() + ".jfif");
-    console.log("image changed")
+    console.log("image changed");
 
     img_n++;
 }
