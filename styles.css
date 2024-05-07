@@ -1,0 +1,10 @@
+#image_container {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+img {
+    max-width: 100%;
+}
+

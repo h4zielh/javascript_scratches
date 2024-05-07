@@ -48,3 +48,5 @@ document.querySelector("html").addEventListener("click", function () {
 
 i could've used "() => {" too wich is called "arrow function"
 */
+
+//lets add a code to update an image very time the user clicks on it:
