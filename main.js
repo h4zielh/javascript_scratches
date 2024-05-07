@@ -63,4 +63,9 @@ function img_click() {
     img_n++;
 }
 
+// set the event handler of the img
+myImage.onclick = img_click;
+
+// we could replace the above code to the following:
+// myImage.addEventListener("click", img_click);
 
