@@ -17,10 +17,10 @@ document.getElementById("4_==_4").textContent = "4" == 4;   // but this returns 
 
 // if and else in js, pretty simple too
 if (4 == "4") {
-    console.log("this execute for sure");
+    console.log("this one executes for sure");
 }
 
 else {
-    console.log("this otherwise...");
+    console.log("this one otherwise...");
 }
 
