@@ -51,7 +51,7 @@ i could've used "() => {" too wich is called "arrow function"
 
 //lets add a code to update an image very time the user clicks on it:
 let img_n = 2
-const myImage = document.querySelector("img");
+const myImage = document.getElementById("img_changer");
 
 function img_click() {
     if (img_n > 4) {
@@ -62,3 +62,5 @@ function img_click() {
 
     img_n++;
 }
+
+
