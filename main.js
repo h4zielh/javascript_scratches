@@ -50,3 +50,15 @@ i could've used "() => {" too wich is called "arrow function"
 */
 
 //lets add a code to update an image very time the user clicks on it:
+let img_n = 2
+const myImage = document.querySelector("img");
+
+function img_click() {
+    if (img_n > 4) {
+        img_n = 1;
+    }
+
+    myImage.setAttribute("src", "images/image_" + img_n.toString() + ".jfif");
+
+    img_n++;
+}
