@@ -15,3 +15,12 @@ document.getElementById("4_==_4").textContent = "4" == 4;   // but this returns 
 // the !== testfor ===, then negate its value, simple huh?
 3 !== "3" // equals to !(3 === "3")
 
+// if and else in js, pretty simple too
+if (4 == "4") {
+    console.log("this execute for sure");
+}
+
+else {
+    console.log("this otherwise...");
+}
+
