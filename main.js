@@ -45,4 +45,6 @@ this is a bit ugly and harder to read.
 document.querySelector("html").addEventListener("click", function () {
     console.log("click");
 });
+
+i could've used "() => {" too wich is called "arrow function"
 */
