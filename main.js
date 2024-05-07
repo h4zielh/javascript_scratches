@@ -24,3 +24,9 @@ else {
     console.log("this one otherwise...");
 }
 
+// creating a funtion:
+function almost_useless(num1, num2) {
+    return num1 + num2;
+}
+
+console.log(almost_useless(1 + 2), "wow");
