@@ -1,2 +1,3 @@
 # javascript_scratches
-just testing some stuff
+
+I made this repository just to test some things in javascript, no big deal.
