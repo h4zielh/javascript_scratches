@@ -30,3 +30,19 @@ function almost_useless(num1, num2) {
 }
 
 console.log(almost_useless(1 + 2), "wow");
+
+// creating a event handler for when the user clicks anywhere on the page:
+function click_msg() {
+    console.debug("click");
+}
+
+document.querySelector("html").addEventListener("click", click_msg);
+
+/*
+i could've done this one below wich uses a anonym function, but i think
+this is a bit ugly and harder to read.
+
+document.querySelector("html").addEventListener("click", function () {
+    console.debug("click");
+});
+*/
