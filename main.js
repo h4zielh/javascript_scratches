@@ -3,3 +3,7 @@ myHeading.textContent = "Hello world!";
 
 // we declare variables using the let keyword:
 let somevar1;
+
+// js is also case-sensitive, we can sign a value to a variable in its declaration:
+let SomeVar1 = "i'm a string!";
+
