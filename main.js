@@ -229,8 +229,9 @@ try {
     1 + 2;
 }
 
-catch (EvalError) {
-
+catch (exceptionVar) {
+    // do something with the variable containg the exception
+    // this variable no longer exists after this block ends
 }
 
 // executes after both try and catch blocks
