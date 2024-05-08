@@ -90,5 +90,7 @@ acessed after its declared because those variable are in a "temporal dead zone" 
 the declaration is processed.
 */
 
-// javascript converts integers to strings when using the + operator
+// javascript converts numbers to strings when using the + operator
 SomeVar3 = "the answer is: " + 43; // equals to "the answer is: 43"
+
+// but with all other operations, its the inverse, the strings are converted to numbers
