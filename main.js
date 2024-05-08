@@ -130,5 +130,8 @@ index-accessing fish[1] still returns undefined.
 If you include a trailing comma at the end of the list of elements, the comma is ignored.
 */
 
+// but only the last comma is ignored:
+const fish = [, "Lion", "Angel"]; // this creates [ <1 empty item>, 'Lion', 'Angel' ]
+
 
 
