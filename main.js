@@ -79,6 +79,14 @@ const SomeVar2 = 10;
 var SomeVar3;
 console.log(SomeVar3);// returns "undefined"
 
-// when we declare a variable outsied of any function, its called global varriable becuase its acessible
-// in all our code. when we declare a variable inside a function its a local variable because it's
-// acessible only inside that function
+/*
+when we declare a variable outsied of any function, its called global variable becuase its acessible
+in all our code. when we declare a variable inside a function its a local variable because it's
+acessible only inside that function
+
+one of the differences between let and var is that variables declared with var can be accessed even before
+the line of its dlcaration, which means it to be "hoisted" while variables declared with let can only be
+acessed after its declared because those variable are in a "temporal dead zone" until the line coontaing
+the declaration is processed.
+*/
+
