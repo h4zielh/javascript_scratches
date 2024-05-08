@@ -108,5 +108,14 @@ parseFloat("1.231") // returns 1.231 as a float
 // we cal also use the + operator to convert string to numbers:
 (+"1.1") + (+"1.1"); // return 2.2, the parentheses are not required, just added for clarity
 
+// an array:
+const array1 = ["one" , "two", "three"];
+
+// as an array is a reference type, we can modify it's attributes, such as its elements:
+array1.push("four");
+delete array1[1];           // all fine here
+array[2] = "don't know";    // repare here, like python w can use ' inside "", and " inside '', there's
+                            // nothing wrong here because the interpreter can distinguish it from the string quotes
+
 
 
