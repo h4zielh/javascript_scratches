@@ -223,5 +223,19 @@ switch (SomeVar3) {
 // with throw, we can throws exceptions with any expressions not just Exceptions types like python:
 // throw 1 + 2; // it's valid
 
+// ex:
+
+try {
+    1 + 2;
+}
+
+catch (EvalError) {
+
+}
+
+// executes after both try and catch blocks
+finally {
+
+}
 
 
