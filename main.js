@@ -270,7 +270,7 @@ just like so, we can use continue to go back to the beggining of the current lab
 
 // we can use the for ... in to iterate over a enumerable object like python or C#:
 const sequence1 = [1, 2, 3, 4, 5];
-for (item in sequence1) {
+for (var item in sequence1) {
     console.log(item);
 }
 
