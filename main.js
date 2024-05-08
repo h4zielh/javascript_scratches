@@ -308,7 +308,7 @@ executed for the value of each distinct property.
 // functions has hoisting too, which means we can access functions before the line in wich it's
 // declared juts like variables declared with var
 
-// in a function, we can use the arguments array (which is a local variable inside
+// in a function, we can use the arguments variable (which is a local variable inside
 // the function scope) to access every argument passed to the function:
 function test1(args) {
     return arguments.length;
@@ -317,3 +317,6 @@ function test1(args) {
 console.log(test1(1, 2, 3)); // return 3
 console.log(test1(1, 2));    // return 2
 console.log(test1(1));       // return 1
+
+// the arguments variable is not an array actually, it is an array-like that has a numbered
+// index and a length property, but does not have all manipulations methods of arrays
