@@ -103,7 +103,7 @@ SomeVar3 = "the answer is: " + 43; // equals to "the answer is: 43"
 parseInt("101", 2); // 5
 
 // here weconvert a string to a float
-parseFloat("1.231") // returns 1.231 as a float
+parseFloat("1.231"); // returns 1.231 as a float
 
 // we cal also use the + operator to convert string to numbers:
 (+"1.1") + (+"1.1"); // return 2.2, the parentheses are not required, just added for clarity
