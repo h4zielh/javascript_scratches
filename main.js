@@ -239,4 +239,6 @@ finally {
 
 }
 
+// after a try block there must at least a catch or a finally block
+
 
