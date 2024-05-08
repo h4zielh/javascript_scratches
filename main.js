@@ -247,7 +247,7 @@ for (let n = 1; n < 11; n++) {
 }
 
 // while
-var n = 10;
+let n = 10;
 while (n > 0) {
     console.log(n);
     n--;
