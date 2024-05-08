@@ -252,4 +252,9 @@ while (n > 0) {
     n--;
 }
 
+// do...while
+do {
+    console.log(n);
+} while (false)
+
 
