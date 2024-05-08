@@ -74,3 +74,7 @@ myImage.onclick = img_click;
 const SomeVar2 = 10;
 
 // a javascript identifier name can start with _ and $ too. We can use unicode letters like å and ü
+
+// if a variable is declared without an initializer, it is assigned the value undefined:
+var SomeVar3;
+console.log(SomeVar3);// returns "undefined"
