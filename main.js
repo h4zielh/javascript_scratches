@@ -192,5 +192,17 @@ else {
 }
 
 // in js false, undefined, 0, NaN, null and "" evaluates to false
+// Booleanmust not be confused with true or false:
+const b = new Boolean(false);
+
+if (b) {
+    // this condition evaluates to true
+}
+
+if (b == true) {
+    // this condition evaluates to false
+}
+
+
 
 
