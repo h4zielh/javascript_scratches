@@ -270,6 +270,10 @@ just like so, we can use continue to go back to the beggining of the current lab
 
 // we can use for..in to iterate over user-defined properties of an enumerable object:
 const sequence1 = [1, 2, 3, 4, 5];
+sequence1.variable1 = 10;
+sequence1.variable2 = 20;
+
+console.log("for..in:");
 for (var item in sequence1) {
     console.log(item);
 }
@@ -283,4 +287,8 @@ arrays, because the for...in statement iterates over user-defined properties in 
 array elements, if you modify the Array object (such as adding custom properties or methods).
 */
 
-
+// alternatively, we can use for..of to iterate over value properties of an enumerable object:
+console.log("for..of:");
+for (var item in sequence1) {
+    console.log(item);
+}
