@@ -191,6 +191,6 @@ else {
 
 }
 
-//
+// in js false, undefined, 0, NaN, null and "" evaluates to false
 
 
