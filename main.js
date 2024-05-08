@@ -274,4 +274,13 @@ for (var item in sequence1) {
     console.log(item);
 }
 
+/*
+Although it may be tempting to use this as a way to iterate over Array elements, the for...in
+statement will return the name of your user-defined properties in addition to the numeric indexes.
+
+Therefore, it is better to use a traditional for loop with a numeric index when iterating over
+arrays, because the for...in statement iterates over user-defined properties in addition to the
+array elements, if you modify the Array object (such as adding custom properties or methods).
+*/
+
 
