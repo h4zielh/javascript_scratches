@@ -102,3 +102,8 @@ SomeVar3 = "the answer is: " + 43; // equals to "the answer is: 43"
 // this converts the binary number 101 to an integer
 parseInt("101", 2); // 5
 
+// here weconvert a string to a float
+parseFloat("1.231") // returns 1.231 as a float
+
+// to conver
+
