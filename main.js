@@ -78,3 +78,7 @@ const SomeVar2 = 10;
 // if a variable is declared without an initializer, it is assigned the value undefined:
 var SomeVar3;
 console.log(SomeVar3);// returns "undefined"
+
+// when we declare a variable outsied of any function, its called global varriable becuase its acessible
+// in all our code. when we declare a variable inside a function its a local variable because it's
+// acessible only inside that function
