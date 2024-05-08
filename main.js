@@ -119,5 +119,10 @@ array[1] = "don't know";    // repare here, like python w can use ' inside "", a
 
 console.log(array1); // returns ["one", "don't know", "four"]
 
+// If you put two commas in a row in an array literal, the array leaves an empty slot for the unspecified element:
+const fish = ["Lion", , "Angel"]; // this creates [ 'Lion', <1 empty item>, 'Angel' ]
+
+
+
 
 
