@@ -203,6 +203,25 @@ if (b == true) {
     // this condition evaluates to false
 }
 
+// the switch statement:
+switch (SomeVar3) {
+
+    case 10:
+        console.log("it's 10");
+        break;
+    
+    case 5:
+        console.log("it's 5");
+        break;
+
+    // executes if none of the above is true
+    default:
+        console.log("i don't know");
+}
+
+// You can throw exceptions using the throw statement and handle them using the try...catch statements.
+// with throw, we can throws exceptions with any expressions not just Exceptions types like python:
+// throw 1 + 2; // it's valid
 
 
 
