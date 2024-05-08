@@ -158,5 +158,10 @@ const fish = [, "Lion", "Angel"]; // this creates [ <1 empty item>, 'Lion', 'Ang
 //The exponent part is an e or E followed by an integer, which can be signed (preceded by + or -).
 // A floating-point literal must have at least one digit, and either a decimal point or e (or E).
 
+// a regex literal
+const re = /ab+c/;
+
+
+
 
 
