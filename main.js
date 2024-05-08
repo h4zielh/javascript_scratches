@@ -72,3 +72,5 @@ myImage.onclick = img_click;
 
 // declaring a constant variable:
 const SomeVar2 = 10;
+
+// a javascript identifier name can start with _ and $ too. We can use unicode letters like å and ü
