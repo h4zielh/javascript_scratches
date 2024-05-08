@@ -133,5 +133,24 @@ If you include a trailing comma at the end of the list of elements, the comma is
 // but only the last comma is ignored:
 const fish = [, "Lion", "Angel"]; // this creates [ <1 empty item>, 'Lion', 'Angel' ]
 
+// integer literals:
+
+// octals begins with a zero or 0o:
+0o66;
+
+// hexadecimals begins with ox:
+0xF3;
+
+// binary begins with 0b:
+0b101;
+
+// a n suffix indicates the integer is a BigInr literal and it can
+// also be used in every of the previous bases too:
+0o66n;
+0xF3n;
+0b101n;
+
+
+
 
 
