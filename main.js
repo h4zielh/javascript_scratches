@@ -325,3 +325,13 @@ console.log(test1(1));       // return 1
 function test2(a, b = 2) {
     return a + b;
 }
+
+// The rest parameter syntax allows us to represent an indefinite number of arguments as an array:
+function test3(a, b, ...c) {
+    let n = 0;
+    for (let item in c) {
+        n += c;
+    }
+
+    return (n * a) / b;
+}
