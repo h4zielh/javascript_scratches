@@ -299,3 +299,11 @@ The for...of statement creates a loop Iterating over iterable objects (including
 Set, arguments object and so on), invoking a custom iteration hook with statements to be
 executed for the value of each distinct property.
 */
+
+// functions
+
+// when you pass a variable to a function, this variable is passed by value, but if this
+// variable is an object, it's passed by reference
+
+// functions has hoisting too, which means we can access functions before the line in wich it's
+// declared juts like variables declared with var
