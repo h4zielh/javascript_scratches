@@ -170,6 +170,12 @@ console.log("an integer ${someVar4} inside a string.");
 // there are some special characters use in strings like \b, \f, \t, etc. So if we wanted to print
 // exactly '\n' we would need to write '\\n', same for '\' -> '\\', pretty straight-forward?
 
+// we can divide a string in multiple lines using '\':
+"this string \
+is broken \
+across multiple \
+lines.";
+
 
 
 
