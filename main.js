@@ -243,12 +243,12 @@ finally {
 
 // a loop for
 for (let n = 1; n < 11; n++) {
-    debugger.log(n);
+    console.log(n);
 }
 
 // while
 while (n > 0) {
-    debugger.log(n);
+    console.log(n);
     n--;
 }
 
