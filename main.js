@@ -307,3 +307,13 @@ executed for the value of each distinct property.
 
 // functions has hoisting too, which means we can access functions before the line in wich it's
 // declared juts like variables declared with var
+
+// in a function, we can use the arguments array to get
+// access to every argument passed to the function:
+function test1(args) {
+    return arguments.length;
+}
+
+console.log(test1(1, 2, 3)); // return 3
+console.log(test1(1, 2));    // return 2
+console.log(test1(1));       // return 1
