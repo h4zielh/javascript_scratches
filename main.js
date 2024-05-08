@@ -167,6 +167,8 @@ console.log("an integer ${someVar4} inside a string.");
 // it's the same as f"an integer {someVar4} inside a string." in python, the interpreter executes
 // the code between the { } and converts it's result in a string.
 
+// there are some special characters use in strings like \b, \f, \t, etc. So if we wanted to print
+// exactly '\n' we would need to write '\\n', same for '\' -> '\\', pretty straight-forward?
 
 
 
