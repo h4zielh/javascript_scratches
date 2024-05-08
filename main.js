@@ -246,4 +246,10 @@ for (let n = 1; n < 11; n++) {
     debugger.log(n);
 }
 
+// while
+while (n > 0) {
+    debugger.log(n);
+    n--;
+}
+
 
