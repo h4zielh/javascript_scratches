@@ -149,8 +149,14 @@ const fish = [, "Lion", "Angel"]; // this creates [ <1 empty item>, 'Lion', 'Ang
 0o66n;
 0xF3n;
 0b101n;
+// float literal can start with a dot directly, and end with an expoent too:
+3.1415926
+.123456789
+3.1E+12
+.1e-23
 
-
+//The exponent part is an e or E followed by an integer, which can be signed (preceded by + or -).
+// A floating-point literal must have at least one digit, and either a decimal point or e (or E).
 
 
 
