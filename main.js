@@ -275,7 +275,7 @@ sequence1.variable1 = 10;
 sequence1.variable2 = 20;
 
 console.log("for..in:");
-for (var item in sequence1) {
+for (let item in sequence1) {
     console.log(item); // this logs 0, 1, 2, 3, 4, "variable1", "variable2"
 }
 
@@ -290,7 +290,7 @@ array elements, if you modify the Array object (such as adding custom properties
 
 // alternatively, we can use for..of to iterate over value properties of an enumerable object:
 console.log("for..of:");
-for (var item of sequence1) {
+for (let item of sequence1) {
     console.log(item); // this logs 1, 2, 3, 4, 5
 }
 
