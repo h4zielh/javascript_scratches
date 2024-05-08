@@ -122,7 +122,9 @@ console.log(array1); // returns ["one", "don't know", "four"]
 // If you put two commas in a row in an array literal, the array leaves an empty slot for the unspecified element:
 const fish = ["Lion", , "Angel"]; // this creates [ 'Lion', <1 empty item>, 'Angel' ]
 
-
+/* Note that the second item is "empty", which is not exactly the same as the actual undefined value.
+When using array-traversing methods like Array.prototype.map, empty slots are skipped. However,
+index-accessing fish[1] still returns undefined. */
 
 
 
