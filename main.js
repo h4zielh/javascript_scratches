@@ -320,3 +320,8 @@ console.log(test1(1));       // return 1
 
 // the arguments variable is not an array actually, it is an array-like that has a numbered
 // index and a length property, but does not have all manipulations methods of arrays
+
+// a function containing a default parameter:
+function test2(a, b = 2) {
+    return a + b;
+}
