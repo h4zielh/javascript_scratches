@@ -257,4 +257,15 @@ do {
     console.log(n);
 } while (false)
 
+/*
+we can create a label as follow:
+
+label_name:
+    statement
+
+then we can use "break statement" to exit the current label rather than the inner-most block
+just like so, we can use continue to go back to the beggining of the current label.
+
+*/
+
 
