@@ -241,4 +241,9 @@ finally {
 
 // after a try block there must at least a catch or a finally block
 
+// a loop for
+for (let n = 1; n < 11; n++) {
+    debugger.log(n);
+}
+
 
