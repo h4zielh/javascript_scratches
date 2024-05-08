@@ -70,3 +70,5 @@ myImage.onclick = img_click;
 // we could replace the above code to the following:
 // myImage.addEventListener("click", img_click);
 
+// declaring a constant variable:
+const SomeVar2 = 10;
