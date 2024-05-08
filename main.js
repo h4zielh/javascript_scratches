@@ -161,6 +161,12 @@ const fish = [, "Lion", "Angel"]; // this creates [ <1 empty item>, 'Lion', 'Ang
 // a regex literal
 const re = /ab+c/;
 
+// look:
+var someVar4 = 123;
+console.log("an integer ${someVar4} inside a string.");
+// it's the same as f"an integer {someVar4} inside a string." in python, the interpreter executes
+// the code between the { } and converts it's result in a string.
+
 
 
 
