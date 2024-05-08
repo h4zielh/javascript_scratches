@@ -58,7 +58,7 @@ function img_click() {
         img_n = 1;
     }
 
-    myImage.setAttribute("src", "images/image_" + img_n.toString() + ".jfif");
+    myImage.setAttribute("src", "images/image_" + img_n + ".jfif");
     console.log("image changed");
 
     img_n++;
@@ -90,3 +90,5 @@ acessed after its declared because those variable are in a "temporal dead zone" 
 the declaration is processed.
 */
 
+// javascript converts integers to strings when using the + operator
+SomeVar3 = "the answer is: " + 43; // equals to "the answer is: 43"
