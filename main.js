@@ -399,3 +399,14 @@ console.log(a); // this prints: [1, 2, 3, a3: 4]
 a["4"] = 5;
 
 console.log(a); // this prints: [1, 2, 3, a3: 4, 5]
+
+// we can use maps, that are actually like dictionaries:
+const map1 = Map();
+
+// set
+map1.set("dog", "woof");
+map1.set("cat", "meow");
+map1;set("Williams FW15C", "vruuuummmm vruuuuuuummmmm vruuuuuuuuummmmmmm");
+
+// get
+map1.get("dog"); // return "woof"
