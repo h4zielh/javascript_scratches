@@ -451,7 +451,7 @@ setVar1.add(1);
 
 console.log(setVar1); // print (1, "some string", 2)
 
-// using anobject initializer:
+// using an object initializer:
 const obj1 = {
     var1: 3,
     var2: 4,
@@ -479,3 +479,15 @@ you cannot use dot notation to access a property whose name is not a valid JavaS
 identifier. For example, a property name that has a space or a hyphen, that starts with
 a number, or that is held inside a variable can only be accessed using the bracket notation.
 */
+
+// if you try to add a string object as a new property of another object, it's old content
+// and object name will be added as attributes with both values being the value you set:
+str = "myString";
+myObj[str] = "This key is in variable str";
+
+console.log(myObj[str]);     // 'This key is in variable str'
+console.log(myObj.myString); // 'This key is in variable str'
+
+// also, the attibute with name of the string object must only be accessed by the way you
+// accessed it when you added it to the another object:
+// console.log(myObj.str); // undefined
