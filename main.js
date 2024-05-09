@@ -450,3 +450,13 @@ setVar1.add(1);
 setVar1.add(1);
 
 console.log(setVar1); // print (1, "some string", 2)
+
+// using anobject initializer:
+const obj1 = {
+    var1: 3,
+    var2: 4,
+    var3: "five", // all fine here
+    4: "six",
+    "five": 7
+}
+
