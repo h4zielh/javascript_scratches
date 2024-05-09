@@ -460,6 +460,9 @@ const obj1 = {
     "five": 7
 }
 
+// the 4 attribute can only be accessed using bracket
+// notation because it's not a valid name
+
 // we can use a construction function to create a "simple class":
 function Car(make, model, year) {
     this.make = make;
@@ -480,17 +483,14 @@ identifier. For example, a property name that has a space or a hyphen, that star
 a number, or that is held inside a variable can only be accessed using the bracket notation.
 */
 
-// if you try to add a string object as a new property of another object, it's old content
-// and object name will be added as attributes with both values being the value you set:
+// if you try to add a new property for an object using the brack notation and using a defined
+// string variable it's content will be the name of the new add attribute:
 const myObj= {};
 let str1;
 str1 = "myString";
 myObj[str1] = "This key is in variable str1";
 
+// console.log(myObj.str); // this returns undefined because only the content of the string variable is used
+
 console.log(myObj[str1]);     // 'This key is in variable str'
 console.log(myObj.myString);  // 'This key is in variable str'
-console.log(myObj[myString]); // 'This key is in variable str'
-
-// also, the attibute with the name of the string object must only be accessed by the way you
-// accessed it when you added it to the another object:
-// console.log(myObj.str1); // undefined
