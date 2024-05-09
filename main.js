@@ -579,6 +579,7 @@ class MyClass1 {
     static func2() {
 
     }
-
-
 }
+
+// Unlike function declarations, class declarations are not
+// hoisted, you cannot use a class before it is declared.
