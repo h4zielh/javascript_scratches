@@ -414,3 +414,4 @@ map1.size; // 3
 
 // delete
 map1.delete("dog");
+map1.has("dog"); // false
