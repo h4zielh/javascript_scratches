@@ -355,14 +355,13 @@ let var2;
 var2 = (1 > 2)? "its true": "it's false";
 
 // the typeof operator returns the type of a variable as a string
-delete b;
 let a = 1;
-let b = "2";
+let b2 = "2";
 let c = [3, 4, 5];
 let d = {e: 6, f: 7};
 
 typeof a; // int
-typeof b; // string
+typeof b2; // string
 typeof c; // array
 typeof d; // object
 
@@ -371,7 +370,7 @@ typeof d; // object
 
 // You can use the new operator to create an instance of a user-defined
 // object type or of one of the built-in object types:
-let a = new Array(1, 2, 3); // [1, 2, 3]
+let a2 = new Array(1, 2, 3); // [1, 2, 3]
 
 /* 
 Use the this keyword to refer to the current object. In general, this refers to the calling
