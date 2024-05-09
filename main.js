@@ -485,12 +485,12 @@ a number, or that is held inside a variable can only be accessed using the brack
 let myObj;
 let str1;
 str1 = "myString";
-myObj[str1] = "This key is in variable str";
+myObj[str1] = "This key is in variable str1";
 
 console.log(myObj[str1]);     // 'This key is in variable str'
 console.log(myObj.myString);  // 'This key is in variable str'
 console.log(myObj[myString]); // 'This key is in variable str'
 
-// also, the attibute with name of the string object must only be accessed by the way you
+// also, the attibute with the name of the string object must only be accessed by the way you
 // accessed it when you added it to the another object:
 // console.log(myObj.str1); // undefined
