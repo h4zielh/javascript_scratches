@@ -649,6 +649,9 @@ const MyClass3 = class MyClassLongerName {
 // MyClass3 inherits from MyClass1
 class Myclass3 extends Myclass1 {
 
+    // override static field
+    static field1 = 50;
+
     MyValue;
 
     constructor(value1, value2) {
@@ -666,6 +669,16 @@ class Myclass3 extends Myclass1 {
         return "nothing";
     }
 }
+
+// Derived classes don't have access to the parent class's private fields
+
+// A class can only extend from one class.
+
+// Instances of derived classes are also instances of the base class.
+let myClass3obj = new Myclass3();
+
+console.log(myClass3obj instanceof MyClass3); // true
+console.log(myClass3obj instanceof MyClass1); // true
 
 
 
