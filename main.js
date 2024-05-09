@@ -406,7 +406,7 @@ const map1 = new Map();
 // set
 map1.set("dog", "woof");
 map1.set("cat", "meow");
-map1;set("Williams FW15C", "vruuuummmm vruuuuuuummmmm vruuuuuuuuummmmmmm");
+map1.set("Williams FW15C", "vruuuummmm vruuuuuuummmmm vruuuuuuuuummmmmmm");
 
 // get
 map1.get("dog"); // return "woof"
