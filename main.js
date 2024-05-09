@@ -113,9 +113,10 @@ const array1 = ["one" , "two", "three"];
 
 // as an array is a reference type, we can modify it's attributes, such as its elements:
 array1.push("four");
-delete array1[1];           // all fine here
+// delete array1[1];         // bad parctice, it won't the length is not affected and others elements are not re-indexed 
+array1[1] = undefined;       // all fine here
 array1[1] = "don't know";    // repare here, like python w can use ' inside "", and " inside '', there's
-                            // nothing wrong here because the interpreter can distinguish it from the string quotes
+                             // nothing wrong here because the interpreter can distinguish it from the string quotes
 
 console.log(array1); // returns ["one", "don't know", "four"]
 
