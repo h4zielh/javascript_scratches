@@ -483,10 +483,11 @@ identifier. For example, a property name that has a space or a hyphen, that star
 a number, or that is held inside a variable can only be accessed using the bracket notation.
 */
 
-// if you try to add a new property for an object using the brack notation and using a defined
-// string variable it's content will be the name of the new add attribute:
+// if you try to add a new property for an object using the bracket notation and using a defined
+// string variable, it's content will be the name of the new added attribute:
 const myObj= {};
 let str1;
+
 str1 = "myString";
 myObj[str1] = "This key is in variable str1";
 
