@@ -546,3 +546,39 @@ fruit = fruitbear;
 
 fruit == fruitbear; // return true
 */
+
+// classes
+class MyClass1 {
+
+    // instance field
+    field1 = 1;
+
+    // static field
+    static field2 = 2;
+
+    // static block
+    static {
+        // initializes a bunch of static fields, attributes and methods
+    }
+
+    // Fields, methods, static fields, and static methods all have
+    // "private" forms
+     #myPrivateField = "bar";
+
+    // constructor
+    constructor() {
+
+    }
+
+    // instance method
+    func1() {
+
+    }
+
+    // static method
+    static func2() {
+
+    }
+
+
+}
