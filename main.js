@@ -367,3 +367,7 @@ typeof d; // object
 
 // The instanceof operator returns true if the specified object is of the specified object type:
 [1, 2, 3] instanceof Array; // true
+
+// You can use the new operator to create an instance of a user-defined
+// object type or of one of the built-in object types:
+let a = new Array(1, 2, 3); // [1, 2, 3]
