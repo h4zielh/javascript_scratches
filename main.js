@@ -470,4 +470,8 @@ function Car(make, model, year) {
 let someCar1 = new Car("don't know", "Lebron", "1984");
 console.log(someCar1.year); // 1984
 
+// we can access it's properties with dot notation and bracket notation:
+someCar1.model;   // dot
+someCar1["model"] // bracket
+
 // is't it cool?
