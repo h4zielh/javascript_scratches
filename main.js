@@ -436,5 +436,5 @@ when all keys are the same type and all values are the same type.
 keys because object treats each key as a string whether it's
 a number value, boolean value or any other primitive value.
 
-
+- Use objects when there is logic that operates on individual elements.
 */
