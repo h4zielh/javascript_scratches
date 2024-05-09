@@ -335,3 +335,11 @@ function test3(a, b, ...c) {
 
     return (n * a) / b;
 }
+
+//If an expression does not evaluate to an object, then assignments
+// to properties of that expression do not assign:
+const val = 0;
+val.x = 3;
+
+console.log(val.x); // Prints undefined.
+console.log(val); // Prints 0.
