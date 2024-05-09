@@ -410,3 +410,7 @@ map1;set("Williams FW15C", "vruuuummmm vruuuuuuummmmm vruuuuuuuuummmmmmm");
 
 // get
 map1.get("dog"); // return "woof"
+map1.size; // 3
+
+// delete
+map1.delete("dog");
