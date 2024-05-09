@@ -355,6 +355,7 @@ let var2;
 var2 = (1 > 2)? "its true": "it's false";
 
 // the typeof operator returns the type of a variable as a string
+delete b;
 let a = 1;
 let b = "2";
 let c = [3, 4, 5];
