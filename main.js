@@ -344,4 +344,9 @@ val1.x = 3;
 console.log(val1.x); // Prints undefined.
 console.log(val1); // Prints 0.
 
+// putting a variable chain in a const, let, or var statement often does not work. Only the
+// outermost/leftmost variable would get declared; other variables within the assignment
+// chain are not declared by the const/let/var statement. For example:
+const z = y = x = f(); // z isdeclared, y and x are not, referenceing one of the two raises an error
+
 
