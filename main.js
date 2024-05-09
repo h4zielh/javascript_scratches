@@ -489,7 +489,7 @@ myObj[str1] = "This key is in variable str";
 
 console.log(myObj[str1]);     // 'This key is in variable str'
 console.log(myObj.myString);  // 'This key is in variable str'
-console.log(myObj[myString]);
+console.log(myObj[myString]); // 'This key is in variable str'
 
 // also, the attibute with name of the string object must only be accessed by the way you
 // accessed it when you added it to the another object:
