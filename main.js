@@ -596,13 +596,13 @@ console.log(someVar5.func3(someVar6)); // chocolate bar
 
 // Similar to functions, class declarations
 // also have their expression counterparts.
-const MyClass1 = class {
+const MyClass2 = class {
     // Class body...
 };
 
 // Class expressions can have names as well. The expression's
 // name is only visible to the class's body.
-const MyClass = class MyClassLongerName {
+const MyClass3 = class MyClassLongerName {
     // Class body. Here MyClass and MyClassLongerName point to the same class.
 };
 
