@@ -415,3 +415,26 @@ map1.size; // 3
 // delete
 map1.delete("dog");
 map1.has("dog"); // false
+
+/*
+advantages of using map as dicionary instead of objects:
+
+- The keys of an Object are strings or symbols,
+whereas they can be of any value for a Map
+
+- You can get the size of a Map easily, while you
+have to manually keep track of size for an Object.
+
+- The iteration of maps is in insertion order of the elements.
+
+These three tips can help you to decide whether to use a Map or an Object:
+
+- Use maps over objects when keys are unknown until run time, and
+when all keys are the same type and all values are the same type.
+
+- Use maps if there is a need to store primitive values as
+keys because object treats each key as a string whether it's
+a number value, boolean value or any other primitive value.
+
+
+*/
