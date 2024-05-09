@@ -442,11 +442,11 @@ a number value, boolean value or any other primitive value.
 // Set objects
 
 // set objects behave like set objects in python
-const setVar1 = Set();
+const setVar1 = new Set();
 setVar1.add(1);
 setVar1.add("some string");
 setVar1.add(2);
 setVar1.add(1);
 setVar1.add(1);
 
-console.log(setVar1); // prints []
+console.log(setVar1); // print (1, "some string", 2)
