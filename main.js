@@ -358,12 +358,10 @@ var2 = (1 > 2)? "its true": "it's false";
 let a = 1;
 let b2 = "2";
 let c = [3, 4, 5];
-let d = {e: 6, ff: 7}
 
 typeof a; // int
 typeof b2; // string
 typeof c; // array
-typeof d; // object
 
 // The instanceof operator returns true if the specified object is of the specified object type:
 [1, 2, 3] instanceof Array; // true
