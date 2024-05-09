@@ -505,3 +505,16 @@ reads the property's value from an instance car1.
 */
 Car.prototype.color = "red";
 console.log(car1.color); // "red"
+
+// we can add functions to objects:
+const myObj2 = {
+    useless() { // we don't need the function keyword here
+        console.log("i do nothing");
+    },
+
+    another_useless: function () {
+        console.log("i do nothing too");
+    },
+};
+
+myObj2.useless();
