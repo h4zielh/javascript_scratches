@@ -366,4 +366,4 @@ typeof c; // array
 typeof d; // object
 
 // The instanceof operator returns true if the specified object is of the specified object type:
-11 instanceof int; // true
+[1, 2, 3] instanceof Array; // true
