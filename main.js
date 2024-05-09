@@ -563,11 +563,11 @@ class MyClass1 {
 
     // Fields, methods, static fields, and static methods all have
     // "private" forms
-     #myPrivateField = "bar";
+     #myPrivateField;
 
     // constructor
-    constructor() {
-
+    constructor(arg = "chocolate") {
+        this.#myPrivateField = arg;
     }
 
     // instance method
@@ -579,7 +579,17 @@ class MyClass1 {
     static func2() {
 
     }
+
+    // A class method can read the private fields of other
+    // instances, as long as they belong to the same class:
+    func3(anotherMyClass1) {
+        return this.#myPrivateField + anotherMyClass1.#myPrivateField
+    }
 }
+
+let someVar5 = new MyClass1();
+let someVar6 = new MyClass1(" bar");
+console.log(someVar5.func3(someVar6)); // chocolate bar
 
 // Unlike function declarations, class declarations are not
 // hoisted, you cannot use a class before it is declared.
