@@ -46,7 +46,7 @@ document.querySelector("html").addEventListener("click", function () {
     console.log("click");
 });
 
-i could've used "() => {" too wich is called "arrow function"
+i could've used "() => {" too, witch is called "arrow function"
 */
 
 //lets add a code to update an image very time the user clicks on it:
@@ -164,9 +164,9 @@ const re = /ab+c/;
 
 // look:
 var someVar4 = 123;
-console.log("an integer ${someVar4} inside a string.");
+console.log(`an integer ${someVar4} inside a string.`);
 // it's the same as f"an integer {someVar4} inside a string." in python, the interpreter executes
-// the code between the { } and converts it's result in a string.
+// the code between the { } and converts it's result in a string. the ` is necessary
 
 // there are some special characters use in strings like \b, \f, \t, etc. So if we wanted to print
 // exactly '\n' we would need to write '\\n', same for '\' -> '\\', pretty straight-forward?
