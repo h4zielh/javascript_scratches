@@ -508,6 +508,8 @@ console.log(car1.color); // "red"
 
 // we can add functions to objects:
 const myObj2 = {
+    name: "Cristiano",
+
     useless() { // we don't need the function keyword here
         console.log("i do nothing");
     },
@@ -517,4 +519,14 @@ const myObj2 = {
     },
 };
 
-myObj2.useless();
+myObj2.useless(); // i do nothing
+
+// we can use the keyword "this" to access its internal variables:
+function getName() {
+    return this.name;
+}
+myObj2.getName = getName;
+console.log(myObj2.getName()); // it return "Cristiano"
+
+// this is a "hidden parameter" of a function call that's passed
+// in by specifying the object before the function that was called.
