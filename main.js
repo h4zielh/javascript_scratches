@@ -359,3 +359,8 @@ let a = 1;
 let b = "2";
 let c = [3, 4, 5];
 let d = {e: 6, f: 7};
+
+typeof a; // int
+typeof b; // string
+typeof c; // array
+typeof d; // object
