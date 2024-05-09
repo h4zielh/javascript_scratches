@@ -358,7 +358,7 @@ var2 = (1 > 2)? "its true": "it's false";
 let a = 1;
 let b2 = "2";
 let c = [3, 4, 5];
-let d = {e: 6, f: 7}
+let d = {e: 6, ff: 7}
 
 typeof a; // int
 typeof b2; // string
