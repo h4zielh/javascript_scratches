@@ -557,23 +557,44 @@ class MyClass1 {
     static field2 = 2;
 
     // static block
+    // this is a constructor that runs when the class is first loaded
     static {
         // initializes a bunch of static fields, attributes and methods
     }
 
     // Fields, methods, static fields, and static methods all have
     // "private" forms
-     #myPrivateField;
+    #myPrivateField;
+
+    // another private field
+    #_field3;
 
     // constructor
-    constructor(arg = "chocolate") {
+    constructor(arg = "chocolate", num = 10) {
         this.#myPrivateField = arg;
+        this.#_field3 = num; // calls field3 set accessor
     }
 
     // instance method
     func1() {
 
     }
+
+    // definine a get accessor:
+    get field3() {
+        return this.#_field3;
+    }
+
+    // define a set accessor:
+    set field3(value) {
+        this.#_field3 = value;
+    }
+
+    /*
+    It looks as if the object has properties called red and set — but actually, no such
+    properties exists on the instance! There are only two methods, but they are prefixed
+    with get and set, which allows them to be manipulated as if they were properties.
+    */
 
     // static method
     static func2() {
@@ -585,6 +606,15 @@ class MyClass1 {
     func3(anotherMyClass1) {
         return this.#myPrivateField + anotherMyClass1.#myPrivateField
     }
+
+    /*
+    However, if anotherColor is not a Color instance, #values won't exist. (Even
+    if another class has an identically named #values private field, it's not
+    referring to the same thing and cannot be accessed here.).
+
+    If you don't know if a private field exists on an object and you wish to access
+    it without using try/catch to handle the error, you can use the in operator.
+    */
 }
 
 let someVar5 = new MyClass1();
