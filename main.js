@@ -559,7 +559,13 @@ class MyClass1 {
     // static block
     // this is a constructor that runs when the class is first loaded
     static {
-        // initializes a bunch of static fields, attributes and methods
+        /*
+        initializes a bunch of static fields, attributes and methods
+
+        Static initialization blocks are almost equivalent to immediately
+        executing some code after a class has been declared. The only difference
+        is that they have access to static private properties.
+        */
     }
 
     // Fields, methods, static fields, and static methods all have
@@ -637,6 +643,30 @@ const MyClass3 = class MyClassLongerName {
 };
 
 // new MyClassLongerName(); // ReferenceError: MyClassLongerName is not defined
+
+// inheritance
+
+// MyClass3 inherits from MyClass1
+class Myclass3 extends Myclass1 {
+
+    MyValue;
+
+    constructor(value1, value2) {
+        super(value1); // you cannot access "this" before super()
+        this.MyValue = value2;
+    }
+
+    func4() {
+        // calls func3 from the parent class
+        super func3();
+    }
+
+    // override func1 from the parent class implementation
+    func1() {
+        return "nothing";
+    }
+}
+
 
 
 
