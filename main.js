@@ -482,12 +482,12 @@ a number, or that is held inside a variable can only be accessed using the brack
 
 // if you try to add a string object as a new property of another object, it's old content
 // and object name will be added as attributes with both values being the value you set:
-str = "myString";
-myObj[str] = "This key is in variable str";
+str1 = "myString";
+myObj[str1] = "This key is in variable str";
 
-console.log(myObj[str]);     // 'This key is in variable str'
+console.log(myObj[str1]);     // 'This key is in variable str'
 console.log(myObj.myString); // 'This key is in variable str'
 
 // also, the attibute with name of the string object must only be accessed by the way you
 // accessed it when you added it to the another object:
-// console.log(myObj.str); // undefined
+// console.log(myObj.str1); // undefined
