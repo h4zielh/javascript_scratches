@@ -348,7 +348,7 @@ console.log(val1); // Prints 0.
 // putting a variable chain in a const, let, or var statement often does not work. Only the
 // outermost/leftmost variable would get declared; other variables within the assignment
 // chain are not declared by the const/let/var statement. For example:
-const z = y = x = f(); // z isdeclared, y and x are not, referenceing one of the two raises an error
+const z = y = x = 10; // z is declared, y and x are not, referenceing one of the two raises an error
 
 // the ternary operator:
 let var2;
@@ -358,10 +358,12 @@ var2 = (1 > 2)? "its true": "it's false";
 let a = 1;
 let b2 = "2";
 let c = [3, 4, 5];
+let d = {e: 6, ff: 7}
 
 typeof a; // int
 typeof b2; // string
 typeof c; // array
+typeof d; // object
 
 // The instanceof operator returns true if the specified object is of the specified object type:
 [1, 2, 3] instanceof Array; // true
