@@ -370,7 +370,7 @@ typeof d; // object
 
 // You can use the new operator to create an instance of a user-defined
 // object type or of one of the built-in object types:
-let a2 = new Array(1, 2, 3); // [1, 2, 3]
+const a2 = new Array(1, 2, 3); // [1, 2, 3]
 
 /* 
 Use the this keyword to refer to the current object. In general, this refers to the calling
@@ -385,3 +385,17 @@ is useful with classes to call the parent constructor, for example.
 super(args); // calls the parent constructor.
 super.functionOnParent(args);
 */
+
+// if we try to access an array element using something other than a number
+// we will be accessing a property instead:
+const a3 = [1, 2, 3];
+
+a["a3"] = 4;
+
+console.log(a); // this prints: [1, 2, 3, a3: 4]
+
+// but this only happens because the value between the index accessors is a string
+// and can't be converted to a number to access some posiiton in the array, ex:
+a["4"] = 5;
+
+console.log(a); // this prints: [1, 2, 3, a3: 4, 5]
