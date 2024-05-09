@@ -583,3 +583,20 @@ class MyClass1 {
 
 // Unlike function declarations, class declarations are not
 // hoisted, you cannot use a class before it is declared.
+
+// Similar to functions, class declarations
+// also have their expression counterparts.
+const MyClass1 = class {
+    // Class body...
+};
+
+// Class expressions can have names as well. The expression's
+// name is only visible to the class's body.
+const MyClass = class MyClassLongerName {
+    // Class body. Here MyClass and MyClassLongerName point to the same class.
+};
+
+// new MyClassLongerName(); // ReferenceError: MyClassLongerName is not defined
+
+
+
