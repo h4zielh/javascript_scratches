@@ -349,4 +349,8 @@ console.log(val1); // Prints 0.
 // chain are not declared by the const/let/var statement. For example:
 const z = y = x = f(); // z isdeclared, y and x are not, referenceing one of the two raises an error
 
+// the ternary operator:
+let var2;
+var2 = (1 > 2)? "its true": "it's false";
+
 
