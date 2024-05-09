@@ -401,7 +401,7 @@ a["4"] = 5;
 console.log(a); // this prints: [1, 2, 3, a3: 4, 5]
 
 // we can use maps, that are actually like dictionaries:
-const map1 = Map();
+const map1 = new Map();
 
 // set
 map1.set("dog", "woof");
