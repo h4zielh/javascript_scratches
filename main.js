@@ -482,7 +482,7 @@ a number, or that is held inside a variable can only be accessed using the brack
 
 // if you try to add a string object as a new property of another object, it's old content
 // and object name will be added as attributes with both values being the value you set:
-let myObj;
+const myObj;
 let str1;
 str1 = "myString";
 myObj[str1] = "This key is in variable str1";
