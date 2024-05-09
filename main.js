@@ -460,3 +460,14 @@ const obj1 = {
     "five": 7
 }
 
+// we can use a construction function to create simple classes:
+function Car(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+}
+
+let someCar1 = new Car("don't know", "Lebron", "1984");
+console.log(someCar1.year); // 1984
+
+// is't it cool?
