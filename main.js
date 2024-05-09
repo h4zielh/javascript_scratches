@@ -658,7 +658,7 @@ class Myclass3 extends Myclass1 {
 
     func4() {
         // calls func3 from the parent class
-        super func3();
+        super.func3();
     }
 
     // override func1 from the parent class implementation
