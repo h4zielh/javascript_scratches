@@ -474,4 +474,8 @@ console.log(someCar1.year); // 1984
 someCar1.model;   // dot
 someCar1["model"] // bracket
 
-// is't it cool?
+/*
+you cannot use dot notation to access a property whose name is not a valid JavaScript
+identifier. For example, a property name that has a space or a hyphen, that starts with
+a number, or that is held inside a variable can only be accessed using the bracket notation.
+*/
