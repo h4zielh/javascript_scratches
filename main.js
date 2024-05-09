@@ -495,3 +495,4 @@ myObj[str1] = "This key is in variable str1";
 
 console.log(myObj[str1]);     // 'This key is in variable str'
 console.log(myObj.myString);  // 'This key is in variable str'
+console.log(myObj);           // {myString: 'This key is in variable str1'}
