@@ -338,8 +338,10 @@ function test3(a, b, ...c) {
 
 //If an expression does not evaluate to an object, then assignments
 // to properties of that expression do not assign:
-const val = 0;
-val.x = 3;
+const val1 = 0;
+val1.x = 3;
 
-console.log(val.x); // Prints undefined.
-console.log(val); // Prints 0.
+console.log(val1.x); // Prints undefined.
+console.log(val1); // Prints 0.
+
+
