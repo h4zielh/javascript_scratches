@@ -460,7 +460,7 @@ const obj1 = {
     "five": 7
 }
 
-// we can use a construction function to create a "simple classes":
+// we can use a construction function to create a "simple class":
 function Car(make, model, year) {
     this.make = make;
     this.model = model;
