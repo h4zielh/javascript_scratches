@@ -745,3 +745,10 @@ for (let item of MyObj3.reverse_iterate()) {
 let someVar7;
 someVar4?.length;
 
+// inside a function, we can use the arguments variables to access
+// all arguments passed to the function:
+function useless2(...args) {
+    console.log(arguments.length);
+}
+
+useless2(1, 2, 3, 4, 5, 6, 7, 8, 9, 0); // 10
