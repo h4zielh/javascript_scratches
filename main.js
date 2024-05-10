@@ -735,5 +735,13 @@ for (let item of MyObj3) {
 // iterate over a differet iterator
 console.log("now in reverse:");
 for (let item of MyObj3.reverse_iterate()) {
-    console.log(item);
+    console.log(item); 
 }
+
+// hell ye
+
+// we can use the Optional chaining (?.) to return undefined if
+// the object is null or undefined instead of throwing an error
+let someVar7;
+someVar4?.length;
+
