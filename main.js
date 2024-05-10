@@ -595,6 +595,11 @@ class MyClass1 {
         return 42;
     }
 
+    // a private static method
+    static #privateStaticMethod() {
+        return 42;
+      }
+
     // definine a get accessor:
     get field3() {
         return this.#_field3;
