@@ -680,6 +680,19 @@ let myClass3obj = new Myclass3();
 console.log(myClass3obj instanceof MyClass3); // true
 console.log(myClass3obj instanceof MyClass1); // true
 
+// promisses
 
+/*
+a promise is a returned object to which you attach callbacks,
+instead of passing callbacks into a function
 
+const promise = doSomething();
+const promise2 = promise.then(successCallback, failureCallback);
 
+This second promise (promise2) represents the completion not just of
+doSomething(), but also of the successCallback or failureCallback you
+passed in — which can be other asynchronous functions returning a
+promise. When that's the case, any callbacks added to promise2 get
+queued behind the promise returned by either successCallback or
+failureCallback.
+*/
