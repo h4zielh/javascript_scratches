@@ -648,7 +648,7 @@ const MyClass3 = class MyClassLongerName {
 // inheritance
 
 // MyClass3 inherits from MyClass1
-class Myclass3 extends Myclass1 {
+class Myclass3 extends MyClass1 {
 
     // override static field
     static field1 = 50;
