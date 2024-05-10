@@ -502,9 +502,10 @@ You can add a property to all objects created through a certain constructor usin
 This defines a property that is shared by all objects of the specified type, rather than by just one
 instance of the object. The following code adds a color property to all objects of type Car, and then
 reads the property's value from an instance car1.
-*/
+
 Car.prototype.color = "red";
 console.log(car1.color); // "red"
+*/
 
 // we can add functions to objects:
 const myObj2 = {
