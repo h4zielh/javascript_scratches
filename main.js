@@ -590,6 +590,11 @@ class MyClass1 {
 
     }
 
+    // a private method
+    #privateMethod() {
+        return 42;
+    }
+
     // definine a get accessor:
     get field3() {
         return this.#_field3;
