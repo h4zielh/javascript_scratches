@@ -734,6 +734,6 @@ for (let item of MyObj3) {
 
 // iterate over a differet iterator
 console.log("now in reverse:");
-for (let item of MyObj3.reverse_iterate()) {
+for (let item of MyObj3.reverse_iterate) {
     console.log(item);
 }
