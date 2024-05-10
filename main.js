@@ -720,7 +720,7 @@ class MyClass4 {
     // another iterator
     reverse_iterate() {
         for(let n = this.#values.length; n > 0; n--) {
-            yield this.#values[n];
+            yield this.#values[n - 1];
         }
     }
 }
