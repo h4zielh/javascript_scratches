@@ -724,7 +724,3 @@ let MyObj3 = new MyClass4(10);
 for (let item of MyObj3) {
     console.log(item);
 }
-
-for (let item of MyObj3) {
-    console.log(item + " again");
-}
