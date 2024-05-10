@@ -716,11 +716,24 @@ class MyClass4 {
             yield item;
         }
     }
+
+    // another iterator
+    reverse_iterate() {
+        for(let n = this.#values.length; n > 0; n--) {
+            yield this.#values[n];
+        }
+    }
 }
 
 // iterate over the custem class
 let MyObj3 = new MyClass4(10);
 
 for (let item of MyObj3) {
+    console.log(item);
+}
+
+// iterate over a differet iterator
+console.log("now in reverse:");
+for (let item of MyObj3.reverse_iterate()) {
     console.log(item);
 }
