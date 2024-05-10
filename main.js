@@ -696,6 +696,31 @@ passed in — which can be other asynchronous functions returning a
 promise. When that's the case, any callbacks added to promise2 get
 queued behind the promise returned by either successCallback or
 failureCallback.
-
-
 */
+
+// creating a class with a simple iterator:
+class MyClass4 {
+    #values;
+
+    constructor(count) {
+        this.#values = new Array();
+
+        for(let n = 0; n < count; n++) {
+            this.#values.push("element " + (n + 1));
+        }
+    }
+
+    // iterator function
+    *[Symbol.iterator]() {
+        for (let item of this.#values) {
+            yield item;
+        }
+    }
+}
+
+// iterate over the custem class
+let MyObj3 = new MyClass4(10);
+
+for (let item of MyObj3) {
+    console.log(item);
+}
