@@ -766,3 +766,6 @@ function useless2(...args) {
 
 useless2(1, 2, 3, 4, 5, 6, 7, 8, 9, 0); // 10
 
+// The eval() function evaluates JavaScript code represented
+// as a string and returns its completion value.
+console.log(eval('2 + 2'));
