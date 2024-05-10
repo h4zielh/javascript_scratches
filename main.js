@@ -557,6 +557,9 @@ class MyClass1 {
     // static field
     static field2 = 2;
 
+    // static private field
+    static #privateStaticField = 42;
+
     // static block
     // this is a constructor that runs when the class is first loaded
     static {
@@ -752,3 +755,4 @@ function useless2(...args) {
 }
 
 useless2(1, 2, 3, 4, 5, 6, 7, 8, 9, 0); // 10
+
